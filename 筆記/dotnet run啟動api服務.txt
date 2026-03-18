@@ -1,0 +1,5 @@
+dotnet run --project .\Together.Api\
+不可關terminal
+
+
+http://localhost:5092/WeatherForecast
