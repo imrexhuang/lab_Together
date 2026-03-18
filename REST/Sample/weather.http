@@ -1,2 +1,8 @@
-###########
-GET http://localhost:5294/WeatherForecast
+@localserver = http://localhost:5555
+GET {{localserver}} HTTP/1.1
+Content-Type: application/json
+
+
+######
+GET {{localserver}}/WeatherForecast HTTP/1.1
+Content-Type: application/json
