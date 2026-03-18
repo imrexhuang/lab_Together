@@ -6,5 +6,14 @@ namespace Together.Api.Controllers;
 [Route("api")]
 public class EventController:ControllerBase
 {
-    
+    [Route("add-event")]
+    public IActionResult AddEvent()
+    {
+        return Ok();
+    }
+    [Route("query-event")]
+    public IActionResult QueryEvent()
+    {
+        return Ok();
+    }
 }
