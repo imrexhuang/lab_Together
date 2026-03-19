@@ -16,4 +16,10 @@ public class EventController(IEventService service):Controller
         return View();
     }
     
+    [HttpPost]
+    public IActionResult Add(string name, string coordinator, string place, float lat, float lng, int fee)
+    {
+        service.add(name,coordinator,place,lat, lng, fee);
+        return new RedirectResult("/Event");
+    }
 }
