@@ -1,5 +1,6 @@
 using Together.Application.Services;
 using Together.Application;
+using Together.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 {
@@ -8,7 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
     //注入物件(沒注入測試會有System.InvalidOperationException: Unable to resolve service for type)
     //builder.Services.AddScoped<IEventService, EventService>();
     //重構成以下寫法,落實clean arch
-    builder.Services.AddApplication();
+    builder.Services.AddApplication().AddService();
 }
 
 var app = builder.Build();
