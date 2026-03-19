@@ -10,5 +10,10 @@ public class EventController(IEventService service):Controller
         EventQueryResult[] result = service.query(0,0,0);
         return View(result);
     }
+
+    public IActionResult Add()
+    {
+        return View();
+    }
     
 }
