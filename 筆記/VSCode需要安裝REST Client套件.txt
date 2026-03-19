@@ -7,3 +7,41 @@ Description: REST Client for Visual Studio Code
 Version: 0.25.1
 Publisher: Huachao Mao
 VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=humao.rest-client
+
+
+https://www.tpisoftware.com/tpu/articleDetails/2316
+
+   2.建立  .http or .rest 檔案
+
+            支持 .http or .rest 副檔名的文件，提供程式碼自動補全功能
+
+
+前言
+
+REST Client 是一套VS Code 的 套件，使用上十分簡單快速。但一般開始使用時
+
+大家會覺得他的功能十分簡陋。但其實他已經提供測試API相關功能。本篇介紹
+
+如何使用該工具做相關API測試。
+
+ 
+
+優點與缺點
+
+  優點：
+
+    1.只有一個檔案，團隊成員可通過Git協作維護該檔
+
+    2.支援 cURL和  RFC 2616 兩種標準來呼叫RestAPI
+
+    3.可自定義環境變數
+
+    4.支援 Generate Code Snippet 將HTTP請求轉化為不同的程式語言。(C、C#、Go、Java、Javascript、Node.js等)
+
+ 
+
+缺點：
+
+    1.只支援VsCode
+
+    2.沒有操作UI，相對Postman沒那麼方便
