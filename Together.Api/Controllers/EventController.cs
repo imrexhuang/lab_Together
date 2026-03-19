@@ -1,3 +1,4 @@
+using System.Net.Quic;
 using Microsoft.AspNetCore.Mvc;
 using Together.Application.Services;
 using Together.Contract.Controller;
@@ -13,15 +14,23 @@ public class EventController(IEventService eventService) : ControllerBase
     [HttpPost("add-event")]
     public IActionResult AddEvent(AddEventRequest request)
     {
-        AddEventResponse response = new(Guid.NewGuid(), request.name,
+        EventAddResult result = eventService.add(request.name,
         request.coordinator, request.place, request.lat, request.lng, request.fee);
+        AddEventResponse response = new(result.Id, result.name,
+        result.coordinator, result.place, result.lat, result.lng, result.fee);
         return Ok(response);
     }
     [HttpPost("query-event")]
     public IActionResult QueryEvent(QueryEventRequest request)
     {
-        QueryEventResponse response = new("name1","coordinator2","place3",4.0f,5.0f,6);
-        QueryEventResponse[] events = [response, response, response];
-        return Ok(events);
+        var result = eventService.query(request.lat, request.lng, request.length);
+        List<QueryEventResponse> events = [];
+        foreach(EventQueryResult r in result)
+        {
+            QueryEventResponse response = new(r.name, r.coordinator, r.place,r.lat, r.lng, r.fee);
+            events.Add(response);
+        }
+        
+        return Ok(events.ToArray());
     }
 }
