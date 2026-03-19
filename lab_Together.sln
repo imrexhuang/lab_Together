@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Together.Domain", "Together
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Together.Infrastructure", "Together.Infrastructure\Together.Infrastructure.csproj", "{8312EC1E-95DB-4B59-8E8D-790B7C7152C8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Together.Web", "Together.Web\Together.Web.csproj", "{9DF121BF-64F8-42E3-88BD-3C363C0A3546}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -83,6 +85,18 @@ Global
 		{8312EC1E-95DB-4B59-8E8D-790B7C7152C8}.Release|x64.Build.0 = Release|Any CPU
 		{8312EC1E-95DB-4B59-8E8D-790B7C7152C8}.Release|x86.ActiveCfg = Release|Any CPU
 		{8312EC1E-95DB-4B59-8E8D-790B7C7152C8}.Release|x86.Build.0 = Release|Any CPU
+		{9DF121BF-64F8-42E3-88BD-3C363C0A3546}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DF121BF-64F8-42E3-88BD-3C363C0A3546}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DF121BF-64F8-42E3-88BD-3C363C0A3546}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{9DF121BF-64F8-42E3-88BD-3C363C0A3546}.Debug|x64.Build.0 = Debug|Any CPU
+		{9DF121BF-64F8-42E3-88BD-3C363C0A3546}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{9DF121BF-64F8-42E3-88BD-3C363C0A3546}.Debug|x86.Build.0 = Debug|Any CPU
+		{9DF121BF-64F8-42E3-88BD-3C363C0A3546}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DF121BF-64F8-42E3-88BD-3C363C0A3546}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DF121BF-64F8-42E3-88BD-3C363C0A3546}.Release|x64.ActiveCfg = Release|Any CPU
+		{9DF121BF-64F8-42E3-88BD-3C363C0A3546}.Release|x64.Build.0 = Release|Any CPU
+		{9DF121BF-64F8-42E3-88BD-3C363C0A3546}.Release|x86.ActiveCfg = Release|Any CPU
+		{9DF121BF-64F8-42E3-88BD-3C363C0A3546}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
