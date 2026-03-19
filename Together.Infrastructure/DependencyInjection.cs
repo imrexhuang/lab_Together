@@ -8,7 +8,8 @@ public static class DependencyInjection
 {
     public static IServiceCollection AddService(this IServiceCollection services)
     {
-        services.AddScoped<IEventRepository, EventMemoryRepository>();
+        //services.AddScoped<IEventRepository, EventMemoryRepository>();
+        services.AddScoped<IEventRepository, EventEFCoreRepository>();
         return services;
     }
 }
