@@ -3,9 +3,9 @@ using Microsoft.AspNetCore.Mvc;
 namespace Together.Web.Controllers;
 public class EventController:Controller
 {
-    public String Index()
+    public IActionResult Index()
     {
-        return "clean arch 要連結到MVC";
+        return View();
     }
     
 }
