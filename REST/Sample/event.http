@@ -1,12 +1,25 @@
 @localserver = http://localhost:5555
-GET {{localserver}}/api/add-event HTTP/1.1
+POST {{localserver}}/api/add-event HTTP/1.1
 Content-Type: application/json
 
+{
+    "name":"hiking",
+    "coordinator":"P tutor",
+    "place":"Taipei Arena",
+    "lat":20.5,
+    "lng":110.3,
+    "fee":600
+}
 
 ######
-GET {{localserver}}/api/query-event HTTP/1.1
+POST {{localserver}}/api/query-event HTTP/1.1
 Content-Type: application/json
 
+{
+    "lat":20.4,
+    "lng":130.5,
+    "length":0.5
+}
 
 
 ######

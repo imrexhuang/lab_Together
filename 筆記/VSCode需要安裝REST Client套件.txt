@@ -1,0 +1,9 @@
+配合調整event.http的測試參數
+
+VSCode需要安裝此套件
+Name: REST Client
+Id: humao.rest-client
+Description: REST Client for Visual Studio Code
+Version: 0.25.1
+Publisher: Huachao Mao
+VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=humao.rest-client
