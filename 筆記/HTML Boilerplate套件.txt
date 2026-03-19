@@ -1,0 +1,6 @@
+Name: HTML Boilerplate
+Id: sidthesloth.html5-boilerplate
+Description: A basic HTML5 boilerplate snippet generator.
+Version: 1.1.1
+Publisher: sidthesloth
+VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=sidthesloth.html5-boilerplate
