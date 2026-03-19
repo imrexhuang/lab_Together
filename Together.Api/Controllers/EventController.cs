@@ -1,12 +1,15 @@
 using Microsoft.AspNetCore.Mvc;
+using Together.Application.Services;
 using Together.Contract.Controller;
 
 namespace Together.Api.Controllers;
 
 [ApiController]
 [Route("api")]
-public class EventController : ControllerBase
+public class EventController(IEventService eventService) : ControllerBase
 {
+    private readonly IEventService eventService = eventService;
+
     [HttpPost("add-event")]
     public IActionResult AddEvent(AddEventRequest request)
     {
